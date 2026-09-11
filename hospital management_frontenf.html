@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230284c7' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M22 12h-4l-3 9L9 3l-3 9H2'/></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CarePulse Hospital Management System</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root">
+      <!-- Fallback shown only if opened directly via file:// instead of http://localhost:5173 -->
+      <div id="file-protocol-notice" style="display:none; font-family: 'Inter', sans-serif; min-height: 100vh; background: #0f172a; color: white; align-items: center; justify-content: center; padding: 24px;">
+        <div style="max-width: 540px; background: #1e293b; border-radius: 16px; padding: 36px; border: 1px solid #334155; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5); text-align: center;">
+          <div style="width: 56px; height: 56px; border-radius: 12px; background: #0284c7; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; font-size: 28px;">
+            🏥
+          </div>
+          <h2 style="font-size: 22px; font-weight: 700; margin-bottom: 12px; color: #f8fafc;">
+            React + Vite Development Server Required
+          </h2>
+          <p style="color: #94a3b8; font-size: 14px; line-height: 1.6; margin-bottom: 24px;">
+            You opened <code>index.html</code> directly via the <code>file://</code> protocol. Modern React JSX applications require the Vite server to bundle and run.
+          </p>
+          <div style="background: #0b1120; border-radius: 10px; padding: 16px; text-align: left; margin-bottom: 20px; font-family: monospace; font-size: 13.5px; border: 1px solid #1e293b;">
+            <div style="color: #64748b; margin-bottom: 6px;"># Option 1: Double-click this file in your project folder</div>
+            <div style="color: #38bdf8; font-weight: bold;">start.bat</div>
+            <div style="color: #64748b; margin: 12px 0 6px;"># Option 2: Run in terminal (PowerShell / CMD)</div>
+            <div style="color: #10b981;">npm install</div>
+            <div style="color: #10b981;">npm run dev</div>
+          </div>
+          <p style="color: #cbd5e1; font-size: 13px;">
+            Once started, open <strong style="color: #38bdf8;">http://localhost:5173</strong> in your browser.
+          </p>
+        </div>
+      </div>
+      <script>
+        if (window.location.protocol === 'file:') {
+          var notice = document.getElementById('file-protocol-notice');
+          if (notice) notice.style.display = 'flex';
+        }
+      </script>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
